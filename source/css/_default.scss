@@ -1,0 +1,281 @@
+/* basic */
+$min-width: 320px;
+$img-url: "../images";
+$screen-size-pc: 1200px;
+
+.pagenation {
+	display: inline-block;
+	text-align: center;
+	@include zero;
+	margin: 50px 0 60px;
+	padding:0 !important;
+	width: 100%;
+                
+	a {
+		background: white;
+	}
+
+	a,
+	strong {
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		color: #999999;
+		border: 1px solid #999;
+		width: 24px;
+		line-height: 22px;
+		margin: 0 2px;
+                
+		@media (min-width: $screen-size-pc) {
+			width:32px;
+			line-height:30px;
+			font-size:16px;
+		} 
+
+		&.jump,
+		&.move {
+			font-size:0;
+			position:relative;
+			border: 1px solid #ccc;
+
+			i {
+				position:absolute;
+				left:50%;
+				top:50%;
+				color: #a5a5a5;
+				font-size: 18px;
+				transform: translateY(-50%) translateX(-50%);
+			}
+		}
+	}
+
+	.active,
+	strong {
+		color: #fff;
+		background:#2C4988;
+		border-color:#2C4988;
+		font-weight: normal;
+		font-weight:500;
+	}
+}
+
+* {
+	@include box-sizing;
+}
+s
+input[type="password"] {
+	font-family: sans-serif;
+
+	&::placeholder {
+		font-family: "apple sd gothic neo", sans-serif;
+	}
+}
+
+.sr-only {
+	position: absolute !important;
+	overflow: hidden !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	clip: rect(0, 0, 0, 0) !important;
+	border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+	position: static;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+}
+
+/* default input */
+input,
+select,
+textarea {
+	@include border-radius(0);
+	/*
+        @media all and (max-width: 1199px) {
+            appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -webkit-appearance: none;
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+    */
+}
+
+a {
+	text-decoration: none;
+	color: $text-link-color;
+}
+
+button {
+	outline: none;
+	border-radius: 0;
+}
+
+article.layer-popup {
+	display:none;
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:rgba(0,0,0,.7);
+
+	&.on {
+		display:block;
+	}
+
+	div.pop-outline {
+		position:absolute;
+		left:15px;
+		right:15px;
+		top:50%;
+		transform:translateY(-50%);
+		max-height:90vh;
+
+		div.search {
+			display:none;
+			text-align:center;
+			background:#fff;
+			width:100%;
+
+			&.on {
+				display:inline-block;
+			}
+		
+
+			h2 {
+				font-size:22px;
+				font-weight:600;
+				margin:45px 0;
+			}
+
+			ul {
+				display:block;
+				border-top:1px solid #C8C8C8;
+				list-style:none;
+				margin:0;
+				padding:0;
+				height:280px;
+				overflow:hidden;
+				overflow-y:scroll;
+
+				li {
+					position:relative;
+					padding:10px 15px 10px 55px;
+					border-bottom:1px solid #C8C8C8;
+					text-align:left;
+
+					input[type="radio"] {
+						position:absolute;
+						left:15px;
+						top:50%;
+						transform:translateY(-50%);
+						width:24px;
+						height:24px;
+					}
+
+					label {
+						font-size:18px;
+						font-weight:500;
+
+						i {
+							font-style:normal;
+							display:block;
+							color:#555555;
+						}
+					}
+				}
+			}
+
+			button {
+				width:108px;
+				height:50px;
+				border:none;
+				background:#363636;
+				color:#fff;
+				font-size:20px;
+				font-weight:600;
+				margin: 40px 0 40px;
+			}
+		}
+
+		div.message-alert {
+			display:none;
+			text-align:center;
+			background:#fff;
+			width:100%;
+
+			&.on {
+				display:inline-block;
+			}
+		
+
+			h2 {
+				font-size:22px;
+				font-weight:600;
+				margin:45px 0 0;
+
+				span {
+					display:block;
+				}
+			}
+
+			button {
+				width:108px;
+				height:50px;
+				border:none;
+				background:#363636;
+				color:#fff;
+				font-size:20px;
+				font-weight:600;
+				margin: 40px 0 40px;
+			}
+		}
+
+		div.message-result {
+			display:none;
+			text-align:center;
+			padding:0 25px;
+
+			&.on {
+				display:block;
+			}
+		
+
+			h2 {
+				font-size:20px;
+				font-weight:600;
+				margin:0 0 30px;
+				color:#fff;
+				background:#000;
+				line-height:50px;
+			}
+
+			p {
+				font-size:15px;
+				font-weight:500;
+				color:#fff;
+				word-break:keep-all;
+				line-height:1.6;
+				
+				span {
+					display:block;
+				}
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,361 @@
+
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>가축질병관리</title>
+        <link href="source/css/boxicons.css" rel="stylesheet">
+        <link href="source/css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="source/js/jquery-3.5.1.min.js"></script>
+        <script src="source/js/slick.min.js"></script>
+        <script src="source/js/common.js"></script>
+
+
+    </head>
+
+    <body class="main-layout">
+
+        <!-- S:header -->
+        <header id="header">
+            <div class="container">
+                <h1>홍길동</h1>
+
+                <button class="logout">
+                    로그아웃
+                </button>
+            </div>
+        </header>
+        <!-- E:header -->
+        
+
+
+
+
+        <!-- S:mainContent -->
+        <div id="content" class="content">
+
+
+            <article class="farm">
+                <div class="container">
+
+                    <button class="back">뒤로</button>
+
+                    <h2>
+                        행복농원 (2022-1222-22)
+                    </h2>
+
+                    <fieldset>
+                        <legend class="sr-only">정보입력</legend>
+
+                        <h3>기본정보</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>농장등록번호</th>
+                                    <td><input type="text" readonly value="2022-1222-22"></td>
+                                </tr>
+                                <tr>
+                                    <th>농장대표자</th>
+                                    <td><input type="text" readonly value="김영희"></td>
+                                </tr>
+                                <tr>
+                                    <th>신고일자</th>
+                                    <td><input type="text" readonly value="2012-09-25"></td>
+                                </tr>
+                                <tr>
+                                    <th>시설면적</th>
+                                    <td><input type="text" readonly value="29"></td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td><input type="text" value="010-9112-5737"></td>
+                                </tr>
+                                <tr>
+                                    <th>축종</th>
+                                    <td><input type="text" readonly value="소"></td>
+                                </tr>
+                                <tr>
+                                    <th>사육두수</th>
+                                    <td><input type="text" readonly value="20"></td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td><input type="text" readonly value="제주시 전농로 00"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>위치정보</h3>
+                        
+                        <div class="infotext">
+                            기본정보에 입력된 농장주소와 실제 위치가 다를시
+                            주소를 검색하거나 아래의 지도를 움직여 현재 농장의
+                            위치를 표시해주세요.
+                        </div>
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>주소</th>
+                                    <td><button class="search-addr">우편번호찾기</button></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="address">
+
+                                        <dl>
+                                            <dt>도로명</dt>
+                                            <dd>
+                                                (63176) 제주특별자치도 제주시 서사로 92
+                                            </dd>
+
+                                            <dt>지번</dt>
+                                            <dd>
+                                                (63176) 제주특별자치도 제주시 삼도일동 530 제동해피죤
+                                            </dd>
+                                        </dl>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="map">
+
+                                        <!-- 지도영역 -->
+
+                                        <p class="location-text">
+                                            <span>위도 : 674354</span>
+                                            <span>경도 : 674354</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>시설정보</h3>
+                        
+                        <div class="infotext">
+                            각 항목별 1장 이상 첨부 , 최대 20MB까지 가능
+                        </div>
+
+                        <ul class="file">
+
+                            <li>
+                                <h4>농장전경사진</h4>
+
+                                <button class="add">추가</button>
+
+                                <div class="outline">
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h4>
+                                    출입통제안내판
+                                
+                                    <div class="check">
+                                        <span>
+                                            <input name="check01" id="check01-y" type="radio">
+                                            <label for="check01-y">
+                                                설치
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input name="check01" id="check01-n" type="radio">
+                                            <label for="check01-n">
+                                                미설치
+                                            </label>
+                                        </span>
+                                        
+                                    </div>
+                                </h4>
+
+                                <button class="add">추가</button>
+
+                                <div class="outline">
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h4>
+                                    입구소독기
+                                
+                                    <div class="check">
+                                        <span>
+                                            <input name="check02" id="check02-y" type="radio">
+                                            <label for="check02-y">
+                                                설치
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input name="check02" id="check02-n" type="radio">
+                                            <label for="check02-n">
+                                                미설치
+                                            </label>
+                                        </span>
+                                        
+                                    </div>
+                                </h4>
+
+                                <button class="add">추가</button>
+
+                                <div class="outline">
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h4>
+                                    차량출입통제시설
+                                
+                                    <div class="check">
+                                        <span>
+                                            <input name="check03" id="check03-y" type="radio">
+                                            <label for="check03-y">
+                                                설치
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input name="check03" id="check03-n" type="radio">
+                                            <label for="check03-n">
+                                                미설치
+                                            </label>
+                                        </span>
+                                        
+                                    </div>
+                                </h4>
+
+                                <button class="add">추가</button>
+
+                                <div class="outline">
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h4>
+                                    울타리시설
+                                
+                                    <div class="check">
+                                        <span>
+                                            <input name="check04" id="check04-y" type="radio">
+                                            <label for="check04-y">
+                                                설치
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input name="check04" id="check04-n" type="radio">
+                                            <label for="check04-n">
+                                                미설치
+                                            </label>
+                                        </span>
+                                        
+                                    </div>
+                                </h4>
+
+                                <button class="add">추가</button>
+
+                                <div class="outline">
+
+                                    <span>
+                                        <img src="source/images/tmp01.jpg">
+                                        <button class="del">삭제</button>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <button class="submit">제출하기</button>
+
+
+                    </fieldset>
+
+
+                </div>
+            </article>
+        </div>
+        <!-- E:mainContent -->
+
+
+
+        <article class="layer-popup">
+            <div class="pop-outline">
+
+
+
+                <div class="message-alert">
+                    <h2>
+                        <span>제출하시겠습니까?</span>
+                    </h2>
+
+
+                    <button class="cancle">아니오</button>
+                    <button class="ok">예</button>
+                </div>
+
+
+                <div class="message-result">
+                    <h2>
+                        완료되었습니다.
+                    </h2>
+
+
+                    <p>
+                        <span>잠시 후 자동으로</span>
+                        <span>메인화면으로 이동합니다.</span>
+                    </p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </article>
+
+
+    </body>
+
+</html>
