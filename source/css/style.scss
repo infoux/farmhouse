@@ -49,7 +49,6 @@ body {
     }
 
 
-
     header {
         border-bottom:1px solid #C8C8C8;
         text-align:center;
@@ -70,7 +69,7 @@ body {
                 position:absolute;
                 right:15px;
                 top:10px;
-                width:85px;
+                width:90px;
                 height:38px;
                 border:none;
                 background:#5A5A5A;
@@ -214,6 +213,40 @@ body {
                         }
                     }
 
+                    div.button-set {
+                        margin:0 0 60px;
+
+
+                        a {
+                            display:inline-block;
+                            background:#555;
+                            width:150px;
+                            height:150px;
+                            margin:0 10px;
+                            border-radius:20px;
+                            font-size:16px;
+                            color:#fff;
+
+                            i {
+                                display:block;
+                                margin:30px 0 10px;
+                                font-size:50px;
+                            }
+
+                            &:nth-child(1) {
+                                background:#0076C0;
+                            }
+
+                            &:nth-child(2) {
+                                background:#F49C0F;
+                            }
+
+                            &:nth-child(3) {
+                                background:#009D86;
+                            }
+                        }
+                    }
+
                     fieldset {
                         border:none;
                         padding:0;
@@ -314,7 +347,7 @@ body {
                         word-break:keep-all;
                         font-weight:600;
                         font-size:20px;
-                        margin:80px 0 60px;
+                        margin:55px 0 20px;
                         text-align:center;
 
                         span {
@@ -367,7 +400,8 @@ body {
                                     td {
                                         padding:5px;
 
-                                        input[type="text"] {
+                                        input[type="text"],
+                                        select {
                                             border:1px solid #CECECE;
                                             width:100%;
                                             height:36px;
@@ -425,7 +459,7 @@ body {
 
                                         &.map {
                                             padding:0;
-                                            height:170px;
+                                            height:240px;
                                             position:relative;
                                             background:#eee;
 
@@ -450,10 +484,14 @@ body {
                             overflow:hidden;
 
                             li {
+                                display:inline-block;
                                 border:1px solid #BCBCBC;
                                 padding:15px 15px 5px;
                                 margin:0 0 20px;
-                                
+                                font-size:0;
+                                min-height:134px;
+                                width:100%;
+                                overflow-x: hidden;
 
                                 h4 {
                                     position:relative;
@@ -487,48 +525,9 @@ body {
                                 }
 
 
-                                button.add {
-                                    width:66px;
-                                    height:66px;
-                                    border:1px solid #B7B7B7;
-                                    margin:10px 0 0;
-                                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24.001' viewBox='0 0 24 24.001'%3E%3Cpath  d='M1778.708,4476.99h-9.24v-9.241a1.38,1.38,0,1,0-2.76,0v9.241h-9.239a1.38,1.38,0,1,0,0,2.76h9.239v9.239a1.38,1.38,0,1,0,2.76,0v-9.239h9.24a1.38,1.38,0,1,0,0-2.76Z' transform='translate(-1756.088 -4466.369)' fill='%23aaa'/%3E%3C/svg%3E%0A") no-repeat center;
-                                    margin-right:15px;
-                                    vertical-align:top;
-                                }
                                 div.outline {
                                     display:inline-block;
-                                    white-space:nowrap;
-                                    overflow-x:scroll;
-                                    padding:10px 0;
-                                    max-width:calc(100vw - 143px);
-    
-                                    span {
-                                        position:relative;
-                                        display:inline-block;
-                                        vertical-align:top;
-                                        height:66px;
-                                        width:88px;
-                                        margin-right:15px;
-    
-                                        img {
-                                            display:none;
-                                        }
-
-                                        button.del {
-                                            position:absolute;
-                                            right:-10px;
-                                            top:-10px;
-                                            width:20px;
-                                            height:20px;
-                                            border:none;
-                                            margin:0;
-                                            padding:0;
-                                            border-radius:50%;
-                                            border:1px solid #F173AC;
-                                            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.637' height='8.637' viewBox='0 0 8.637 8.637'%3E%3Cpath d='M6339.358,2007.884a.849.849,0,0,0-1.2,0l-2.869,2.869-2.869-2.869a.849.849,0,0,0-1.2,1.2l2.869,2.869-2.869,2.869a.849.849,0,0,0,1.2,1.2l2.869-2.869,2.869,2.869a.849.849,0,0,0,1.2-1.2l-2.869-2.869,2.869-2.869A.849.849,0,0,0,6339.358,2007.884Z' transform='translate(-6330.97 -2007.635)' fill='%23f173ac'/%3E%3C/svg%3E%0A") no-repeat #fff center;
-                                        }
-                                    }
+                                    margin-right:10px;
                                 }
                             }
                         }
